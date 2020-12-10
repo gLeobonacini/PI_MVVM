@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="darkRed">#FF891B0D</color>
+    <color name="marvelRed">#FFB72512</color>
+    <color name="black">#FF000000</color>
+    <color name="opacityblack">#ff000000</color>
+    <color name="darkgray">#FF292929</color>
+    <color name="gray">#7A7575</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="mtrl_fab_icon_text_color_selector">#FFFFFFFF</color>
+    <color name="googleColor">#B3D84438</color>
+    <color name="twitterColor">#B31B9BE8</color>
+    <color name="facebookColor">#B33E5994</color>
+    <color name="visitColor">#B3292929</color>
+</resources>

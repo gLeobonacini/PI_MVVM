@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.QuizResultFragment"
+    android:background="@color/black">
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:alpha="0.5"-->
+    <!--        android:cropToPadding="true"-->
+    <!--        android:scaleType="centerCrop"-->
+    <!--        android:src="@drawable/series_marvel"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <LinearLayout
+        android:id="@+id/quiResFraLlResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressTint="@color/marvelRed"
+            android:rating="4" />
+
+        <TextView
+            android:id="@+id/quiFraTvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Parabéns, você acertou  4 de 5 questões do quiz!"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <View
+            android:id="@+id/dividerQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quiResFraLlShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiResFraLlResult">
+
+        <Button
+            android:id="@+id/btnShareFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/facebookColor"
+            android:drawableLeft="@drawable/ic_facebook_app_logo"
+            android:text="Compartilhar com o Facebook"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnShareTwitter"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/twitterColor"
+            android:drawableLeft="@drawable/ic_twitter"
+            android:text="Compartilhar com o Twitter"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnShareGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/googleColor"
+            android:drawableLeft="@drawable/ic_google"
+            android:text="Compartilhar com o Google"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quiResFraLlPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quiResFraLlShare"
+        app:layout_constraintVertical_bias="0.224">
+
+        <Button
+            android:id="@+id/quiResFraBtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/backQuiz" />
+
+        <Button
+            android:id="@+id/quiResFraBtnNewGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/newGameQuiz" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/bottom_menu"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

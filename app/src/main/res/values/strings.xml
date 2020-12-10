@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Marvel Geek</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="faceSignIn">Log In with Facebook</string>
+    <string name="twitterSignIn">Log In with Twitter</string>
+    <string name="googleSignIn">Log In with Google</string>
+    <string name="visitSignIn">Log In as Visiting</string>
+    <string name="foundCharacter">Search Character</string>
+    <string name="tbFavoriteTitle">Favorites</string>
+    <string name="newGameQuiz">New Game</string>
+    <string name="nextQuiz">Next</string>
+    <string name="backQuiz">Back</string>
+    <string name="descriptionNull">No description available</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.kotlin.marvelgeek.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.kotlin.marvelgeek.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_characterFragment"
+            app:destination="@id/characterFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterFragment"
+        android:name="com.kotlin.marvelgeek.ui.CharacterFragment"
+        android:label="fragment_character"
+        tools:layout="@layout/fragment_character" >
+        <action
+            android:id="@+id/action_characterFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_characterFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.kotlin.marvelgeek.ui.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_characterFragment"
+            app:destination="@id/characterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.kotlin.marvelgeek.ui.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" >
+        <action
+            android:id="@+id/action_quizFragment_to_quizResultFragment"
+            app:destination="@id/quizResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizResultFragment"
+        android:name="com.kotlin.marvelgeek.ui.QuizResultFragment"
+        android:label="fragment_quiz_result"
+        tools:layout="@layout/fragment_quiz_result" >
+        <action
+            android:id="@+id/action_quizResultFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_quizResultFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+</navigation>
